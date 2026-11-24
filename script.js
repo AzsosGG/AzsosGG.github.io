@@ -1,6 +1,6 @@
 // Función para generar pedido a WhatsApp de forma dinámica
 function pedir(producto) {
-  const telefono = "524860000000";
+  const telefono = "524811476727";
   const mensaje = `Hola, quiero pedir: ${producto} - Detalles y Florería Tancanhuitz`;
   window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, '_blank');
 }
