@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Detalles & Florería Tancanhuitz</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="layout-principal">
+  
+  <!-- MENÚ LATERAL -->
+  <aside class="menu-lateral">
+    <h3>Catálogo de Servicio</h3>
+    <ul>
+      <li><a href="+index.html">Inicio</a></li>
+      <li><a href="Ramos.html">Ramos</a></li>
+      <li><a href="Detalles.html">Desayunos y Detalles</a></li>
+    </ul>
+  </aside>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="pagina">
+    <header class="header">
+      <div class="mi-seccion"><h1>DETALLES & FLORERÍA TANCANHUITZ</h1></div>
+    </header>
+
+    <main class=" mi-seccion">
+      <!-- TARJETA DE BIENVENIDA -->
+      <div class="card-bienvenida">
+        <div class="foto-box">
+          <img src="img/Logo/l2.jpeg" alt="Florería Tancanhuitz">
+        </div>
+
+        <div class="Bienvenido">
+          <h2 id="mensaje-saludo">Bienvenido a Detalles y Florería Tancanhuitz</h2>
+          <h3><p>Enviamos hermosos ramos y Detalles para toda ocacion<br>
+          Entregamos las emociones mas Hermosas a tus seres queridos, plasmamos en arreglos Florales, Desayunos y mas.<br>
+          Negocio dedicado a la venta de arreglos florales, desayunos y detalles.</p></h3>
+          <div style="margin-top: 15px;">
+            <button class="btn-principal" onclick="pedir('Pedido General')">Hacer Pedido</button>
+            <button class="btn-principal" style="background: #5a1a2f;" onclick="mostrarPromocion()">Ver Promoción del Día</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIONES DEL NEGOCIO -->
+      <div style="margin-top: 25px; text-align: center;">
+        <h3 style="color: #5a1a2f;">Nuestras Secciones Especiales</h3>
+        
+        <div class="grid-2">
+          <div class="card-prod" onclick="location.href='Ramos.html'" style="cursor: pointer;">
+            <div class="titulo-cat">Ramos Florales</div>
+            <p>Arreglos de rosas, girasoles, gerberas, lirios y lisianthus.</p>
+            <button onclick="event.stopPropagation(); location.href='Ramos.html'">Ver Ramos</button>
+          </div>
+
+          <div class="card-prod" onclick="location.href='Detalles.html'" style="cursor: pointer;">
+            <div class="titulo-cat">Desayunos Sorpresa</div>
+            <p>Clásicos, saludables, infantiles y ediciones especiales.</p>
+            <button onclick="event.stopPropagation(); location.href='Detalles.html'">Ver Desayunos</button>
+          </div>
+
+          <div class="card-prod" onclick="location.href='Detalles.html'" style="cursor: pointer;">
+            <div class="titulo-cat">Canastas de Flores y Dulces</div>
+            <p>Canastas decoradas con flores naturales y dulces variados.</p>
+            <button onclick="event.stopPropagation(); location.href='Detalles.html'">Ver Canastas</button>
+          </div>
+
+          <div class="card-prod" onclick="location.href='Detalles.html'" style="cursor: pointer;">
+            <div class="titulo-cat">Dulceros y Regalos de Cumpleaños</div>
+            <p>Cajitas sorpresa, dulceros infantiles y detalles de celebración.</p>
+            <button onclick="event.stopPropagation(); location.href='Detalles.html'">Ver Dulceros y Regalos</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- UBICACIÓN Y MAPA -->
+      <div class="ubicacion">
+        <p><b>Ubicación:</b> Francisco L. Madero, Tancanhuitz, México, 79800</p>
+        <div class="mapa-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1248.0665725188849!2d-98.96688120316759!3d21.601907069417543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2smx!4v1792896196055!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>" 
+           
+          </iframe>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
